@@ -4,6 +4,9 @@
 
 }
 
+::placeholder {
+    color: #6e6c6cb7;
+}
 
 * {
     box-sizing: border-box;
@@ -21,8 +24,12 @@ body {
 }
 
 h2 {
+    color: rgb(94, 92, 92);
     text-align: center;
     margin: 0 0 20px;
+    text-shadow: 1px 1px rgba(117, 116, 116, 0.527);
+    text-shadow: 2px 2px rgba(141, 141, 141, 0.336);
+    text-shadow: 2px 2px rgba(141, 141, 141, 0.11);
 }
 
 .container {
@@ -44,6 +51,7 @@ h2 {
 }
 
 .form-control label {
+    font-weight: 600;
     color: #777;
     display: block;
     margin-bottom: 5px;
@@ -52,7 +60,7 @@ h2 {
 
 .form-control input {
     border: 2px solid #f0f0f0;
-    border-radius: 4px;
+    border-radius: 6px;
     display: block;
     width: 100%;
     padding: 10px;
@@ -86,6 +94,7 @@ h2 {
 }
 
 .form button {
+    outline: none;
     cursor: pointer;
     font-weight: 600;
     color: #f0f0f0;
@@ -97,4 +106,14 @@ h2 {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
+}
+
+.form button:hover {
+    background-color: #3089c5;
+    border: 2px solid #1e6b9e;
+}
+
+.form button:active {
+    background-color: #256e9e;
+    border: 2px solid #164f75;
 }
